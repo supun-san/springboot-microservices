@@ -23,8 +23,8 @@ public class StudentController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Student>> findAllStudent() {
-        return ResponseEntity.ok(studentService.findAllStudent());
+    public ResponseEntity<List<Student>> findAllStudents() {
+        return ResponseEntity.ok(studentService.findAllStudents());
     }
 
 }
