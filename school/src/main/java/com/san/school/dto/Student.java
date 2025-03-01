@@ -1,11 +1,7 @@
-package com.san.student.entity;
+package com.san.school.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 import lombok.*;
 
-@Entity
 @Getter
 @Setter
 @AllArgsConstructor
@@ -13,11 +9,10 @@ import lombok.*;
 @Builder
 public class Student {
 
-    @Id
-    @GeneratedValue
     private Integer id;
     private String firstName;
     private String lastName;
     private String email;
     private Integer schoolId;
+
 }
